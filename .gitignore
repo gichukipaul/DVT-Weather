@@ -5,6 +5,7 @@
 ## User settings
 xcuserdata/
 .DS_Store
+*/UserInterfaceState.xcuserstate
 ## Obj-C/Swift specific
 *.hmap
 

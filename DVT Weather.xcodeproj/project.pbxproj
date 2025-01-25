@@ -29,22 +29,9 @@
 		DBB5ED942D455C0A00B7AA86 /* DVT WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DVT WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DBB5EDD92D4580C100B7AA86 /* Exceptions for "DVT Weather" folder in "DVT Weather" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"DVT-Weather-Info.plist",
-			);
-			target = DBB5ED792D455C0900B7AA86 /* DVT Weather */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DBB5ED7C2D455C0900B7AA86 /* DVT Weather */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DBB5EDD92D4580C100B7AA86 /* Exceptions for "DVT Weather" folder in "DVT Weather" target */,
-			);
 			path = "DVT Weather";
 			sourceTree = "<group>";
 		};
