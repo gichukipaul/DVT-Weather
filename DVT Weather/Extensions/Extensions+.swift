@@ -20,7 +20,7 @@ extension Bundle {
 extension DateFormatter {
     static let dayOfWeek: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
+        formatter.dateFormat = "EEEE" // Full day name
         return formatter
     }()
     

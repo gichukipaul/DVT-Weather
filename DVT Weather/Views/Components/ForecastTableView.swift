@@ -11,7 +11,7 @@ struct ForecastTableView: View {
     @ObservedObject var viewModel: MainWeatherViewModel
     
     var body: some View {
-        List(viewModel.forecasts ?? [], id: \.self) { forecast in
+        List(viewModel.forecasts?.sorted(by: { $0.forecastDate < $1.forecastDate }) ?? [], id: \.self) { forecast in
             ForecastRow(forecast: forecast, backgroundColor: viewModel.backgroundColor)
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
