@@ -12,7 +12,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     @Published var location: CLLocationCoordinate2D?
-    @Published var isLoading = false
     
     override init() {
         super.init()
@@ -27,7 +26,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     private func startUpdatingLocation() {
-        isLoading = true
         locationManager.startUpdatingLocation()
     }
     
@@ -47,19 +45,16 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let lastlocation = locations.last else {
+        guard let lastlocation = locations.first else {
             print("Location error: No location was found")
-            isLoading = false
             return
         }
         location = lastlocation.coordinate
         print("\(String(describing: location))")
         locationManager.stopUpdatingLocation()
-        isLoading = false
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error) {
         print("Location error: \(error.localizedDescription)")
-        isLoading = false
     }
 }

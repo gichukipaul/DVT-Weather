@@ -1,0 +1,32 @@
+//
+//  Extensions+.swift
+//  DVT Weather
+//
+//  Created by GICHUKI on 26/01/2025.
+//
+
+import Foundation
+
+extension Bundle {
+    var weatherAPIKey: String? {
+        guard let key = object(forInfoDictionaryKey: "weatherAPIKey") as? String else {
+            print("OpenWeatherAPIKey not found in Info.plist")
+            return nil
+        }
+        return key
+    }
+}
+
+extension DateFormatter {
+    static let dayOfWeek: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        return formatter
+    }()
+    
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+}

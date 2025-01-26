@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // To retrive specific data from the ForecastResponse object in a clean manner
-struct ForecastInfo {
+struct ForecastInfo: Hashable {
     let forecastDate: String
     let dayOfWeek: String
     let time: String
