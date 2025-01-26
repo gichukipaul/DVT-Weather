@@ -12,7 +12,9 @@ struct ForecastTableView: View {
     
     var body: some View {
         List(viewModel.forecasts ?? [], id: \.self) { forecast in
-            ForecastRow(forecast: forecast)
+            ForecastRow(forecast: forecast, backgroundColor: viewModel.backgroundColor)
+                .listRowInsets(EdgeInsets())
+                .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
     }
