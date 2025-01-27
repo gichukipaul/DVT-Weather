@@ -59,7 +59,7 @@ An alert will be presented if there is any error (such as no location access or 
 This project follows an MVVM (Model-View-ViewModel) architecture with the following components:
 
 - Model: Represents the weather data (WeatherResponse, ForecastResponse).
-- View: Displays the weather data to the user. The Main view is Programmatic UIKit and the rest are SwiftUI
+- View: Displays the weather data to the user. The views are made using SwiftUI
 - ViewModel: Manages the data fetching, provides data to the view, and handles errors.
 - Combine: Used for handling asynchronous data fetching and combining the results of multiple API calls (weather and forecast).
 - Error Handling: - The project uses a custom error enum to handle errors more effectively.
