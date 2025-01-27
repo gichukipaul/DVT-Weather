@@ -4,19 +4,19 @@ An iOS weather application that fetches real-time weather data and forecasts bas
 
 ## Preview (Both Light and Dark Modes)
 <div style="display:flex; justify-content:center;">
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main1light.png" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main1light.png" alt="Light Mode Screenshot 1" width="222" style="margin-right: 27px;"/>
 
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2light.png" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2light.png" alt="Light Mode Screenshot 2" width="222" style="margin-right: 27px;"/>
 
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3light.png" alt="Light Mode Screenshot 3" width="220" />
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3light.png" alt="Light Mode Screenshot 3" width="222" />
 </div>
 <br>
 <div style="display:flex; justify-content:center;">
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main4light.png" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main4light.png" alt="Light Mode Screenshot 1" width="222" style="margin-right: 27px;"/>
 
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3dark.png" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3dark.png" alt="Light Mode Screenshot 2" width="222" style="margin-right: 27px;"/>
 
-  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2dark.png" alt="Light Mode Screenshot 3" width="220" />
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2dark.png" alt="Light Mode Screenshot 3" width="222" />
 </div>
 
 ## Prerequisites
