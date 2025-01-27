@@ -1,25 +1,22 @@
 # DVT-Weather
 
-An iOS weather application that fetches real-time weather data and forecasts based on the user's location. The app uses SwiftUI for the User Interface, Combine to handle asynchronous data fetching and presents errors in a user-friendly manner with alerts. It integrates with the OpenWeather API for weather data, `CLGeocoder` for translating location names' to Coordinates and Maps from Apple.
+An iOS weather application that fetches real-time weather data and forecasts based on the user's location. The app uses `SwiftUI` for the User Interface, and `Combine` to handle asynchronous data fetching and presents errors in a user-friendly manner with alerts. It integrates with the `OpenWeather API` for weather data, and `CLGeocoder` for translating location names' to Coordinates and Maps from Apple.
 
+## Preview (Both Light and Dark Modes)
 <div style="display:flex; justify-content:center;">
-  <img src="" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main1light.png" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
 
-  <img src="" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2light.png" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
 
-  <img src="" alt="Light Mode Screenshot 3" width="220" />
-  
-  <img src="" alt="Light Mode Screenshot 3" width="220" />
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3light.png" alt="Light Mode Screenshot 3" width="220" />
 </div>
 <br>
 <div style="display:flex; justify-content:center;">
-  <img src="" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main4light.png" alt="Light Mode Screenshot 1" width="220" style="margin-right: 25px;"/>
 
-  <img src="" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main3dark.png" alt="Light Mode Screenshot 2" width="220" style="margin-right: 25px;"/>
 
-  <img src="" alt="Light Mode Screenshot 3" width="220" />
-  
-  <img src="" alt="Light Mode Screenshot 3" width="220" />
+  <img src="https://github.com/gichukipaul/DVT-Weather/blob/main/screenshots/main2dark.png" alt="Light Mode Screenshot 3" width="220" />
 </div>
 
 ## Prerequisites
@@ -29,7 +26,7 @@ An iOS weather application that fetches real-time weather data and forecasts bas
 
 ## Setup
 - Signup and get a free API Key at [https://openweathermap.org/api](https://openweathermap.org/api)
-- You can clone this project directly from XCode or use your terminal as below
+- You can clone this project directly from XCode or use your terminal below
    ```sh
    git clone git@github.com:gichukipaul/DVT-Weather.git
    ```
@@ -38,7 +35,7 @@ An iOS weather application that fetches real-time weather data and forecasts bas
 - Select the Project Target.
 - In the Xcode project navigator, click on your project name at the top of the list. This will open the project settings.
 - Navigate to the `Info` tab located at the top of the Xcode window.
-- Locate the `weatherAPIKey` entry in the list of properties, replace the placeholder text with your actual API key.
+- Locate the `weatherAPIKey` entry in the list of properties, and replace the placeholder text with your actual API key.
 - Save the File
 
 ```xml
@@ -50,8 +47,8 @@ An iOS weather application that fetches real-time weather data and forecasts bas
 ## Features
 - Current Weather: Fetches current weather data based on the user's location.
 - Weather Forecast: Provides a 5-day weather forecast with daily details.
-- Search new locations by Name or select from the Map to get weather forecasts.
-- Save Favourites: Tap on the heart-icon to save the location and weather forecast as favourite.
+- Search for new locations by name or select them from the map to get weather forecasts.
+- Save Favourites: Tap on the heart icon to save the location and weather forecast as favourite.
 
 ## Usage
 - Launch the app, and it will request the user's location.
