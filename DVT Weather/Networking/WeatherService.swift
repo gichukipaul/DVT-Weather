@@ -12,13 +12,17 @@ class WeatherService: WeatherServiceProtocol {
     private let networkService: NetworkServiceProtocol
     var apiKey: String
     
-    // Private static variable for the singleton instance
-    static let shared = WeatherService(networkService: NetworkService.shared, apiKey: Bundle.main.weatherAPIKey ?? "API KEY")
+    // Singleton
+    static var shared: WeatherService = WeatherService(networkService: NetworkService.shared, apiKey: Bundle.main.weatherAPIKey ?? "API KEY")
     
-    // Private initializer to prevent instantiation from outside
-    private init(networkService: NetworkServiceProtocol = NetworkService.shared, apiKey: String) {
+    private init(networkService: NetworkServiceProtocol, apiKey: String) {
         self.networkService = networkService
         self.apiKey = apiKey
+    }
+    
+    // A testable initializer for UNIT testing
+    func overrideSharedInstance(networkService: NetworkServiceProtocol) {
+        WeatherService.shared = WeatherService(networkService: networkService, apiKey: self.apiKey)
     }
     
     func fetchCurrentWeather(latitude: Double, longitude: Double, completion: @escaping (Result<WeatherResponse, WeatherServiceError>) -> Void) {
@@ -77,32 +81,5 @@ class WeatherService: WeatherServiceProtocol {
             return URL(string: "")!
         }
         return url
-    }
-}
-
-// MARK: - Custom Error Enum
-enum WeatherServiceError: Error {
-    case networkError(Error)
-    case invalidResponse
-    case noData
-    case decodingError(Error)
-    case invalidURL
-    case unknownError
-
-    var localizedDescription: String {
-        switch self {
-        case .networkError(let error):
-            return "Network error: \(error.localizedDescription)"
-        case .invalidResponse:
-            return "Invalid response from the server."
-        case .noData:
-            return "No data received from the server."
-        case .decodingError(let error):
-            return "Failed to decode the response: \(error.localizedDescription)"
-        case .invalidURL:
-            return "The URL was invalid."
-        case .unknownError:
-            return "An unknown error occurred."
-        }
     }
 }
